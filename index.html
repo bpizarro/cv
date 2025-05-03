@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum</title>
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS externo -->
+</head>
+<body>
+    <!-- Barra de navegación fija -->
+    <div class="navigation-wrapper">
+        <button class="nav-arrow left-arrow" onclick="scrollNavigation('left')">←</button>
+        <div class="navigation">
+            <a href="#inicio" class="button">Inicio</a>
+            <a href="#perfil-profesional" class="button">Perfil Profesional</a>
+            <a href="#habilidades" class="button">Habilidades</a>
+            <a href="#experiencia-academica" class="button">Experiencia Académica</a>
+            <a href="#certificaciones" class="button">Certificaciones</a>
+            <a href="#idiomas" class="button">Idiomas</a>
+            <a href="#educacion" class="button">Educación</a>
+        </div>
+        <button class="nav-arrow right-arrow" onclick="scrollNavigation('right')">→</button>
+    </div>
+
+    <!-- Contenido principal -->
+    <div id="curriculum">
+        <div class="header-container">
+            <div class="personal-info">
+                <section id="inicio">
+                    <h1>Bastián Alonso Pizarro Pacheco</h1>
+                    <p>
+                        <div class="icon-row">
+                            <a href="mailto:bpizarrop@utem.cl" target="_blank">
+                                <div class="icon-container">
+                                    <span>Correo</span>
+                                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" style="width: 50px; height: 50px; vertical-align: middle;">
+                                </div>
+                            </a>
+                        </div>
+                    </p>
+                    <p>
+                        <div class="icon-row">
+                            <a href="https://www.linkedin.com/in/bpizarrop/" target="_blank" style="text-decoration: none; color: inherit;">
+                                <div class="icon-container">
+                                    <span>LinkedIn</span>
+                                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                                </div>
+                            </a>
+                            <a href="https://bpizarro.github.io/cv" target="_blank" style="text-decoration: none; color: inherit;">
+                                <div class="icon-container">
+                                    <span>Portafolio</span>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                                </div>
+                            </a>
+                            <a href="https://github.com/bpizarro" target="_blank" style="text-decoration: none; color: inherit;">
+                                <div class="icon-container">
+                                    <span>GitHub</span>
+                                    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+                                </div>
+                            </a>
+                        </div>
+                    </p>
+                    <p>Santiago, Chile</p>
+                </section>
+            </div>
+            <img src="foto.png" alt="Foto de perfil" style="width: 300px; height: 400px;">
+        </div>
+    </div>
+
+    <!-- Otras secciones envueltas en .section-container -->
+    <div class="section-container">
+        <section id="perfil-profesional">
+            <h2>Perfil profesional</h2><br>
+            <p style="text-align: justify;">Estudiante de ingeniería en informática en la UTEM (Universidad Tecnológica Metropolitana) y con titulo en Técnico en contabilidad, decidido en mejorar para ser un profesional y personalmente.  </p>
+        </section>
+    </div>
+
+    <div class="experience-container">
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="skills-container">
+                <!-- Contenedor para Habilidades Blandas -->
+                <div class="skills-column soft-skills">
+                    <h3 style="font-size: 2rem;">Habilidades blandas</h3><br>
+                    <ul>
+                        <li>Trabajo en equipo</li>
+                        <li>Resolución de problemas</li>
+                        <li>Adaptabilidad</li>
+                        <li>Compromiso</li>
+                        <li>Honestidad</li>
+                        <li>Responsabilidad</li>
+                        <li>Organización</li>
+                        <li>Liderazgo</li>
+                    </ul>
+                </div>
+
+                <!-- Contenedor para Habilidades Técnicas -->
+                <div class="skills-column soft-skills">
+                    <h3 style="font-size: 2rem;">Habilidades técnicas</h3>
+                    <ul>    
+                        <li>
+                            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" style="width: 40px; height: 40px; vertical-align: middle; margin-left: 10px;">
+                            /
+                            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+                            <span style="font-size: 1.5rem;">HTML/CSS</span>                  
+                        </li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" style="width: 40px; height: 40px; vertical-align: middle; margin-left: 10px;">
+                            /
+                            <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+                            <span style="font-size: 1.5rem;">C/C++</span> 
+                        </li>
+                        <li>
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+                            <span style="font-size: 1.5rem;">Python</span> 
+                        </li>
+                        <li>
+                            <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="PHP" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+                            <span style="font-size: 1.5rem;">PHP</span> 
+                        </li>
+                        <li>
+                            <img src="https://cdn-icons-png.flaticon.com/512/528/528260.png" alt="MySQL" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+                            <span style="font-size: 1.5rem;">MySQL</span> 
+                        </li>
+                        <li>
+                            <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">
+                            <span style="font-size: 1.5rem;">Excel</span> 
+                        </li>
+                    </ul>
+               
+           
+        </section>
+    </div>
+
+    <div class="experience-container">
+        <section id="experiencia-academica">
+            <h2>Experiencia académica</h2><br>
+              <!-- Contenedor para Habilidades Técnicas -->
+              <div class="skills-column soft-skills">
+                <h3 style="font-size: 2rem;">LiquiFacil (Segundo semestre 2024)</h2>    
+                    <p style="text-align: justify;">Proyecto de informática que consistía en realizar un software pensado para una empresa.
+                    Se pensó en algo relacionado en contabilidad, por lo que se hizo un software para calcular y emitir liquidaciones de sueldos.</p>
+                    <p style="text-align: justify;"> Se verificó todos los pasos que conlleva realizarlo mediante el diagrama BPMN.</p>
+                    <p style="text-align: justify;">Se hizo una conexión a través de la base de datos para solicitar la ficha de cada trabajador y obtener los datos necesarios para los calculos para la liquidación.</p>
+                    <p style="text-align: justify;">El proyecto se llevó a cabo mediante PHP y HTML, con conexión a MySQL para las bases de datos.</p>
+                    <p style="text-align: justify;">Debido a problemas no se pudo terminar el proyecto.</p>
+                    </div> <br><br><br>
+               <div class="skills-column soft-skills">
+                <h3 style="font-size: 2rem;">Metro Dijkstra(Segundo semestre 2024)</h2> 
+                    <p style="text-align:justify">Proyecto que se realizó a través de la teoría de grafos, el cual se tuvo de referencía el metro de Santiago de Chile para obtener la ruta más corta.</p>
+                    <p style="text-align:justify">Para realizarlo se tomo las estaciones del metro como vértices y las combinaciones posibles por cada linea para poder obtener el tiempo en el que se demoran.</p>
+                    <p style="text-align:justify">Se realizó en Python para más facilitar el proyecto, utilizando librerías para visualizar la ruta</p>
+            
+        </section>
+    </div>
+    <div class="section-container">
+        <section id="certificaciones">
+            <h2>Certificaciones y cursos</h2><br>
+            <ul>
+                <li style="text-align: left;">Curso de HTML y CSS (Udemy, 2024)</li>
+                <li style="text-align: left;">Curso de PHP y MySQL (Udemy, 2024)</li>
+                <li style="text-align: left;">Curso de Python para principiantes (Sololearn, 2024)</li>
+                <li style="text-align: left;">Curso de C y C++ avanzado (Sololearn, 2024)</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="section-container">
+        <section id="idiomas">
+            <h2>Idiomas</h2><br>
+            <ul>
+                <li style="text-align: center;">Español: Nativo</li>
+                <li style="text-align: center;">Inglés: Intermedio B1</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="section-container">
+        <section id="educacion">
+            <h2>Educación</h2><br>
+            <ul>
+                <li style="text-align: left;">Universidad Técnologica Metropolitana (Ingeniería en informática) 2023-Actualidad</li><br>
+                <li style="text-align: left;">Colegio Polivalente San Bernardo Abad (Técnico en contabilidad) 2019-2022</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p style="font-size: 0.8rem;">© 2025 Bastián Alonso Pizarro Pacheco. Todos los derechos reservados.</p>
+        <div>
+            <a href="mailto:bpizarrop723@gmail.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+            </a>
+            <a href="https://www.linkedin.com/in/bpizarrop/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/bpizarro" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+            </a>
+        </div> 
+        <p style="font-size: 0.8rem;">Este currículum fue creado utilizando HTML y CSS.</p>
+        
+    </footer>
+    <script>
+        function scrollNavigation(direction) {
+            const navigation = document.querySelector('.navigation');
+            const scrollAmount = 100; // Cantidad de desplazamiento en píxeles
+
+            if (direction === 'left') {
+                navigation.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else if (direction === 'right') {
+                navigation.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>

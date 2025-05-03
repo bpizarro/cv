@@ -1,0 +1,328 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #131214;
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Alinea los elementos en columna */
+    padding-top: 60px; /* Asegura que el contenido no quede oculto detrás de la barra fija */
+}
+
+#curriculum {
+    position: relative;
+    background-color: #000000;
+    color: #000000;
+    padding: 20px;
+    width: 70%; /* Ajusta el ancho del currículum */
+    max-width: 700px; /* Ancho máximo */
+    box-shadow: 0 4px 8px rgb(228, 37, 206); /* Agrega una sombra para destacar */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 20px auto; /* Centra horizontalmente */
+    margin-top: 70px; /* Ajusta este valor según la altura de la barra de navegación */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la animación */
+}
+
+#curriculum:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 16px rgb(228, 37, 206); /* Resalta la sombra */
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-align: center; /* Centra el título principal */
+    color: #ffffff;
+}
+
+h2 {
+    text-align: center; /* Centra los subtítulos */
+    margin-top: 40px; /* Espaciado superior */
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 3rem; /* Aumenta el tamaño de la letra */
+    color: #9217cf;
+}
+
+h3 {
+    text-align: center; /* Centra los subtítulos */
+    margin-top: 20px; /* Espaciado superior */
+    margin-bottom: 10px; /* Espaciado inferior */
+    font-size: 2rem; /* Aumenta el tamaño de la letra */
+    color: #a20eec;
+}
+
+p {
+    text-align: center; /* Centra los párrafos */
+    font-size: 1.5rem; /* Aumenta el tamaño de la letra */
+    color : #fff5f5; /* Color del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+.skills-container {
+    display: flex; /* Coloca los contenedores en una fila */
+gap: 20px; /* Espaciado entre los contenedores */
+    justify-content: space-between; /* Distribuye los contenedores uniformemente */
+    align-items: flex-start; /* Alinea los contenedores al inicio verticalmente */
+    margin-top: 20px;
+}
+
+.skills-column {
+    flex: 1; /* Asegura que ambos contenedores tengan el mismo ancho */
+    padding: 10px;
+    background-color: #f5f5f5; /* Fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    
+    text-align: left; /* Alinea el contenido a la izquierda */
+}
+
+.soft-skills {
+    background-color: #390e53; /* Fondo para habilidades blandas */
+    box-shadow: 0 4px 6px rgba(214, 13, 232, 0.978); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la animación */
+}
+
+.soft-skills:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 16px rgb(228, 37, 206); /* Resalta la sombra */
+}
+
+.skills-column h3 {
+    text-align: center; /* Centra el título dentro del contenedor */
+    margin-bottom: 10px;
+}
+
+.skills-column ul {
+    list-style-type: disc; /* Estilo de lista con viñetas */
+    padding-left: 20px; /* Espaciado a la izquierda para las viñetas */
+    margin: 0; /* Elimina márgenes adicionales */
+    text-align: left; /* Alinea el texto de las listas a la izquierda */
+}
+
+.skills-column ul li {
+    margin-bottom: 5px; /* Espaciado entre los elementos de la lista */
+    text-align: left; /* Asegura que cada elemento esté alineado a la izquierda */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.5rem; /* Aumenta el tamaño de la letra de los elementos de lista */
+    margin: 0; /* Elimina márgenes adicionales */
+    line-height: 1.5; /* Espaciado entre líneas */
+    color : #fff5f5; /* Color del texto */
+    text-align: left; /* Centra los elementos de la lista */
+    
+}
+
+footer {
+    text-align: center;
+    margin-top: auto; /* Empuja el pie de página hacia abajo */
+    padding: 10px;
+    background-color: #19072d;
+    color: #f5f5f5;
+    font-size: 10px;
+    width: 100%;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+}
+
+.technical-skills-container {
+    display: flex; /* Coloca las habilidades lado a lado */
+    flex-wrap: wrap; /* Permite que las habilidades se ajusten a la siguiente fila si no caben */
+    justify-content: center; /* Centra las habilidades horizontalmente */
+    gap: 20px; /* Espaciado entre habilidades */
+    margin-top: 15px;
+}
+
+.technical-skill {
+    display: flex;
+    flex-direction: column; /* Coloca el texto encima del logo */
+    align-items: center; /* Centra el contenido horizontalmente */
+    margin-bottom: 15px; /* Espaciado entre habilidades */
+}
+
+#curriculum p {
+    text-align: center; /* Centra los párrafos */
+    font-size: 1.5rem; /* Aumenta el tamaño de la letra */
+}
+
+#curriculum ul li {
+    font-size: 1.5rem; /* Aumenta el tamaño de la letra de los elementos de lista */
+    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+}
+
+.header-container {
+    display: flex; /* Coloca el texto y la foto en una fila */
+    justify-content: space-between; /* Espacia el contenido entre los extremos */
+    align-items: center; /* Alinea verticalmente el contenido */
+    margin-bottom: 30px; /* Espaciado inferior */
+}
+
+.personal-info {
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.header-container img {
+    width: 200px; /* Ajusta el ancho de la foto */
+    height: 200px; /* Ajusta la altura de la foto */
+    border-radius: 50%; /* Hace la foto circular */
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor */
+}
+
+.header-container h1 {
+    margin: 0; /* Elimina el margen del título */
+}
+
+.header-container p {
+    margin: 5px 0; /* Espaciado entre líneas de información personal */
+}
+
+.icon-row {
+    display: flex; /* Coloca los elementos en una fila */
+    gap: 20px; /* Espaciado entre los logos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column; /* Coloca el texto encima del logo */
+    align-items: center; /* Centra el contenido horizontalmente */
+    margin-bottom: 10px; /* Espaciado entre elementos */
+}
+
+.icon-container span {
+    margin-bottom: 5px; /* Espaciado entre el texto y el logo */
+    font-size: 12px; /* Tamaño de fuente del texto */
+    color: #fff5f5; /* Color del texto */
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
+.icon-container img {
+    width: 50px; /* Ajusta el ancho del logo */
+    height: 50px; /* Ajusta la altura del logo */
+}
+
+.navigation-wrapper {
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    top: 0; /* Alinea la barra al borde superior */
+    left: 0; /* Alinea la barra al borde izquierdo */
+    width: 100%; /* Hace que la barra ocupe todo el ancho de la pantalla */
+    background-color: #1b1a1a; /* Fondo oscuro para destacar */
+    z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+    display: flex;
+    align-items: center;
+    padding: 10px 0; /* Espaciado interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
+
+.navigation {
+    display: flex;
+    gap: 10px; /* Espaciado entre los botones */
+    overflow-x: auto; /* Habilita el desplazamiento horizontal */
+    scroll-behavior: smooth; /* Suaviza el desplazamiento */
+    padding: 0 40px; /* Espaciado interno para que las flechas no cubran los botones */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+.navigation::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento */
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1001; /* Asegura que las flechas estén sobre la navegación */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.nav-arrow.left-arrow {
+    left: 10px; /* Posiciona la flecha izquierda */
+}
+
+.nav-arrow.right-arrow {
+    right: 10px; /* Posiciona la flecha derecha */
+}
+
+.nav-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Cambia el fondo al pasar el cursor */
+}
+
+.button {
+    text-decoration: none;
+    background-color: #1b1a1a;
+    color: #fff5f5;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #333333;
+}   /* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navigation {
+        justify-content: flex-start; /* Asegura que los botones comiencen desde el inicio */ 
+    }
+}
+
+section {
+    margin: 0; /* Elimina márgenes adicionales */
+    padding: 0; /* Elimina el espaciado interno del elemento section */
+    scroll-margin-top: 120px; /* Ajusta este valor según la altura de la barra de navegación */
+}
+
+.spacer {
+        flex-shrink: 0; /* Evita que el espaciador se reduzca */
+    width: 20px; /* Ajusta el ancho del espaciador según sea necesario */
+}
+
+.section-container {
+    margin: 100px auto; /* Espaciado entre bloques */
+    max-width: 700px; /* Ancho máximo */
+    padding: 20px; /* Espaciado interno uniforme */
+    background-color: #050107; /* Fondo oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 70%; /* Ajusta el ancho del contenedor */
+    box-shadow: 0 4px 6px rgb(164, 37, 192); /* Sombra ligera */
+    overflow: hidden; /* Asegura que no haya contenido desbordado */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la animación */
+}
+.section-container:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 16px rgb(228, 37, 206); /* Resalta la sombra */
+}
+.experience-container {
+    margin: 100px auto; /* Espaciado entre bloques */
+    max-width: 700px; /* Ancho máximo */
+    padding: 20px; /* Espaciado interno uniforme */
+    background-color: #050107; /* Fondo oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 70%; /* Ajusta el ancho del contenedor */
+    box-shadow: 0 4px 6px rgb(164, 37, 192); /* Sombra ligera */
+    overflow: hidden; /* Asegura que no haya contenido desbordado */
+    
+}
+
