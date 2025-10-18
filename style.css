@@ -288,41 +288,137 @@ footer img {
     }
 }
 
-section {
-    margin: 0; /* Elimina márgenes adicionales */
-    padding: 0; /* Elimina el espaciado interno del elemento section */
-    scroll-margin-top: 120px; /* Ajusta este valor según la altura de la barra de navegación */
+/* Tipografía fluida */
+h1 { font-size: clamp(2rem, 2.5vw + 1rem, 3rem); }
+h2 { font-size: clamp(1.5rem, 2vw + 0.6rem, 3rem); }
+h3 { font-size: clamp(1.1rem, 1.5vw + 0.5rem, 2rem); }
+p, #curriculum ul li, ul { font-size: clamp(1rem, 1.2vw + 0.5rem, 1.5rem); }
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 1024px) {
+  #curriculum, .section-container, .experience-container {
+    width: 85%;
+  }
+  .navigation { gap: 8px; padding: 0 48px; }
 }
 
-.spacer {
-        flex-shrink: 0; /* Evita que el espaciador se reduzca */
-    width: 20px; /* Ajusta el ancho del espaciador según sea necesario */
+/* Móvil y tablets */
+@media (max-width: 768px) {
+  body { padding-top: 70px; } /* compensa barra fija */
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .personal-info { text-align: center; }
+  .header-container img {
+    width: 160px;
+    height: 160px;
+  }
+  .skills-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .section-container, .experience-container {
+    width: 92%;
+    margin: 20px auto;
+    padding: 16px;
+  }
+  .icon-row { gap: 12px; }
+  .icon-container img { width: 40px; height: 40px; }
+  section { scroll-margin-top: 140px; } /* evita que el título quede tapado */
 }
 
-.section-container {
-    margin: 100px auto; /* Espaciado entre bloques */
-    max-width: 700px; /* Ancho máximo */
-    padding: 20px; /* Espaciado interno uniforme */
-    background-color: #050107; /* Fondo oscuro */
-    border-radius: 10px; /* Bordes redondeados */
-    width: 70%; /* Ajusta el ancho del contenedor */
-    box-shadow: 0 4px 6px rgb(164, 37, 192); /* Sombra ligera */
-    overflow: hidden; /* Asegura que no haya contenido desbordado */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la animación */
+/* Teléfonos pequeños */
+@media (max-width: 480px) {
+  .navigation { padding: 0 44px; }
+  .button { padding: 8px 10px; font-size: 12px; }
+  .nav-arrow { width: 36px; height: 36px; font-size: 16px; }
+  .header-container img { width: 140px; height: 140px; }
+  .icon-container span { font-size: 11px; }
+  .section-container, .experience-container {
+    width: 94%;
+    margin: 16px auto;
+    padding: 14px;
+  }
 }
-.section-container:hover {
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-    box-shadow: 0 8px 16px rgb(228, 37, 206); /* Resalta la sombra */
-}
+
+/* Títulos no queden tapados por la barra fija */
+section { scroll-margin-top: 110px; }
+
+/* Bloques de sección: centrados, sin ocupar todo el ancho */
+.section-container,
 .experience-container {
-    margin: 100px auto; /* Espaciado entre bloques */
-    max-width: 700px; /* Ancho máximo */
-    padding: 20px; /* Espaciado interno uniforme */
-    background-color: #050107; /* Fondo oscuro */
-    border-radius: 10px; /* Bordes redondeados */
-    width: 70%; /* Ajusta el ancho del contenedor */
-    box-shadow: 0 4px 6px rgb(164, 37, 192); /* Sombra ligera */
-    overflow: hidden; /* Asegura que no haya contenido desbordado */
-    
+  width: 70%;
+  max-width: 700px;            /* no se agrandan más que esto */
+  margin: 24px auto;           /* centrado y separación vertical */
+  padding: 16px 20px;
+  background: #000000;         /* fondo visible sobre el body */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(228, 37, 206);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+  transform-origin: center;
+}
+
+/* Animación sutil al pasar el mouse */
+.section-container:hover,
+.experience-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgb(228, 37, 206);
+}
+
+/* Ajustes responsivos (mantienen bloques centrados sin ocupar todo) */
+@media (max-width: 1024px) {
+  #curriculum, .section-container, .experience-container { width: 85%; }
+}
+
+@media (max-width: 768px) {
+  .section-container, .experience-container {
+    width: 92%;
+    margin: 20px auto;
+    padding: 16px;
+  }
+  section { scroll-margin-top: 140px; }
+}
+
+@media (max-width: 480px) {
+  .section-container, .experience-container {
+    width: 94%;
+    margin: 16px auto;
+    padding: 14px;
+  }
+}
+
+/* Botones de navegación como contorno + zoom en hover */
+.navigation .button {
+  background: transparent;             /* sin relleno */
+  border: 2px solid rgb(228, 37, 206); /* contorno */
+  color: #fff5f5;
+  border-radius: 8px;
+  padding: 10px 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.navigation .button:hover {
+  transform: translateY(-1px) scale(1.06);
+  background-color: rgba(228, 37, 206, 0.12); /* leve relleno en hover */
+  border-color: rgb(228, 37, 206);
+  box-shadow: 0 0 12px rgba(228, 37, 206, 0.45);
+}
+
+.navigation .button:active {
+  transform: scale(0.98);
+}
+
+.navigation .button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(228, 37, 206, 0.35);
+}
+
+/* En móviles, efecto más sutil */
+@media (max-width: 768px) {
+  .navigation .button:hover { transform: translateY(-1px) scale(1.03); }
 }
 
